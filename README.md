@@ -5,6 +5,12 @@ This project demonstrates **CRUD operations** (Create, Read, Update, Delete) wit
 
 ---
 
+## 🌐 Live Demo
+
+👉 **View the live app here:**  
+https://satyamrathod45.github.io/decimalTask/
+
+
 ## Features
 
 * Add new tasks
