@@ -20,6 +20,9 @@ let count = useRef(0);
 const handleAdd = () => {
   //Edit Mode
   if(editingId != null) {
+    if(!task) {alert("Task Cannott be empty!!!")
+      return;
+    }
     const updatedTodo = data.map(todo => 
       todo.id === editingId ? {...todo , text: task} : todo)
     setData(updatedTodo);
@@ -83,7 +86,7 @@ const handleEdit = (id) => {
             className="bg-black text-white rounded-r-full border-black h-full p-3"
             onClick={handleAdd}
           >
-            ADD Task
+            {editingId != null ? "Edit Task":"ADD Task"}
           </button>
         </div>
 
